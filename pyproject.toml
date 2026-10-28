@@ -1,0 +1,8 @@
+[project]
+name = "korean-llm-eval"
+version = "0.0.1"
+description = "A human-verified benchmark of a Korean-specific linguistic phenomenon for LLMs."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+# Dependencies are added (with pinned versions) as the code needs them.
+dependencies = []
