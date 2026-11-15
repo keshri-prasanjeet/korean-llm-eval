@@ -1,0 +1,14 @@
+[project]
+name = "korean-llm-eval"
+version = "1.0.0"
+description = "Korean speech-level benchmark data, model responses, and API runner."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["eval", "eval.models"]

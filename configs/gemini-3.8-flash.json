@@ -1,0 +1,21 @@
+{
+  "concurrency": 1,
+  "max_attempts": 1,
+  "timeout_seconds": 300,
+  "retry_backoff_seconds": 2,
+  "dataset_files": [
+    "../data/dataset.json"
+  ],
+  "models": [
+    {
+      "name": "google",
+      "provider": "google",
+      "model": "gemini-3.8-flash",
+      "api_key_env": "GOOGLE_API_KEY",
+      "parameters": {
+        "max_output_tokens": 2048
+      }
+    }
+  ],
+  "output_dir": "../outputs/gemini-3.8-flash"
+}

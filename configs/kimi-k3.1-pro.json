@@ -1,0 +1,21 @@
+{
+  "concurrency": 1,
+  "max_attempts": 1,
+  "timeout_seconds": 300,
+  "retry_backoff_seconds": 2,
+  "dataset_files": [
+    "../data/dataset.json"
+  ],
+  "models": [
+    {
+      "name": "kimi",
+      "provider": "kimi",
+      "model": "kimi-k3.1-pro",
+      "api_key_env": "MOONSHOT_API_KEY",
+      "parameters": {
+        "max_output_tokens": 2048
+      }
+    }
+  ],
+  "output_dir": "../outputs/kimi-k3.1-pro"
+}

@@ -1,0 +1,21 @@
+{
+  "concurrency": 1,
+  "max_attempts": 1,
+  "timeout_seconds": 300,
+  "retry_backoff_seconds": 2,
+  "dataset_files": [
+    "../data/dataset.json"
+  ],
+  "models": [
+    {
+      "name": "openai",
+      "provider": "openai",
+      "model": "gpt-6.1-sol",
+      "api_key_env": "OPENAI_API_KEY",
+      "parameters": {
+        "max_output_tokens": 2048
+      }
+    }
+  ],
+  "output_dir": "../outputs/gpt-6.1-sol"
+}
