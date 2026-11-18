@@ -34,8 +34,10 @@ starts with fresh history; later turns include that model's actual earlier repli
 
 Result records preserve the original response text in `raw_response`, its UTF-8
 SHA-256 in `response_sha256`, the model's finish reason, and whether an output limit
-was reached. `verdict` is the saved PASS/FAIL overall-turn judgment;
-`human_reviewed` retains the recorded review status and is false for these records.
+was reached. `verdict` is the final PASS/FAIL overall-turn judgment. Every verdict was
+verified by three human reviewers (two native Korean speakers and the author),
+and the final decision is their consensus, so `human_reviewed` is true for all
+17,500 records.
 All 3,500 response slots per model are included, including empty or limited outputs.
 
 The published dataset preserves the final prompts and expected properties.
